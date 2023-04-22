@@ -14,11 +14,16 @@ struct ForgotPasswordSceen: View {
     var body: some View {
         
         VStack (alignment:.leading,spacing: 20){
-                TextField("Email", text: $email)
-                .textFieldStyle(.plain).padding(.bottom,-10)
-                Divider()
             
-            // MARK: - Log In Button
+            // MARK: - Email TextField
+            
+            TextField("Email", text: $email)
+                .textFieldStyle(.plain)
+                .padding(.bottom,-10)
+            Divider()
+            
+            // MARK: - Login Button
+            
             Button (action: {
                 print("Handle Send Action!")
             }, label: {
@@ -26,12 +31,14 @@ struct ForgotPasswordSceen: View {
                     .font(.title3)
                     .frame(maxWidth: .infinity ,maxHeight: 40)
             })
-                .buttonStyle(.borderedProminent)
-                .tint(.orange)
+            .buttonStyle(.borderedProminent)
+            .tint(.orange)
             
+            // MARK: - Guid Label
             Text("Enter your E-mail and we will send you a new password")
-                    .foregroundColor(.gray)
-                    Spacer()
+                .foregroundColor(.gray)
+            Spacer()
+            
         }.frame(maxWidth: .infinity,alignment: .leading).padding([.leading,.trailing],30)
             .padding(.top,180)
     }
