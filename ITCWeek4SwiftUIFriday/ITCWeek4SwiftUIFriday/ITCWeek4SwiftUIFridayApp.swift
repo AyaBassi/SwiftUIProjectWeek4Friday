@@ -11,7 +11,7 @@ import SwiftUI
 struct ITCWeek4SwiftUIFridayApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoginScreen()
         }
     }
 }

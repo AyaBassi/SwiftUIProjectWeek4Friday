@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F3A499E629F4173B00CE8150 /* SwiftUIExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A499E529F4173B00CE8150 /* SwiftUIExamples.swift */; };
+		F3A499E829F418C900CE8150 /* RoundedRectExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A499E729F418C900CE8150 /* RoundedRectExample.swift */; };
+		F3A499EA29F4399600CE8150 /* ForgotPasswordSceen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A499E929F4399600CE8150 /* ForgotPasswordSceen.swift */; };
+		F3A499EC29F451E400CE8150 /* SignInWithFaceBookScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A499EB29F451E400CE8150 /* SignInWithFaceBookScreen.swift */; };
+		F3A499EE29F452DF00CE8150 /* SignInWithGoogleScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A499ED29F452DF00CE8150 /* SignInWithGoogleScreen.swift */; };
+		F3A499F129F4536B00CE8150 /* SignUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A499F029F4536B00CE8150 /* SignUpScreen.swift */; };
 		F3F71ED029F27D490085A8E6 /* ITCWeek4SwiftUIFridayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F71ECF29F27D490085A8E6 /* ITCWeek4SwiftUIFridayApp.swift */; };
-		F3F71ED229F27D490085A8E6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F71ED129F27D490085A8E6 /* ContentView.swift */; };
+		F3F71ED229F27D490085A8E6 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F71ED129F27D490085A8E6 /* LoginScreen.swift */; };
 		F3F71ED429F27D4B0085A8E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3F71ED329F27D4B0085A8E6 /* Assets.xcassets */; };
 		F3F71ED729F27D4B0085A8E6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3F71ED629F27D4B0085A8E6 /* Preview Assets.xcassets */; };
 		F3F71EE129F27D4B0085A8E6 /* ITCWeek4SwiftUIFridayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F71EE029F27D4B0085A8E6 /* ITCWeek4SwiftUIFridayTests.swift */; };
@@ -36,9 +42,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F3A499E529F4173B00CE8150 /* SwiftUIExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIExamples.swift; sourceTree = "<group>"; };
+		F3A499E729F418C900CE8150 /* RoundedRectExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectExample.swift; sourceTree = "<group>"; };
+		F3A499E929F4399600CE8150 /* ForgotPasswordSceen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordSceen.swift; sourceTree = "<group>"; };
+		F3A499EB29F451E400CE8150 /* SignInWithFaceBookScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithFaceBookScreen.swift; sourceTree = "<group>"; };
+		F3A499ED29F452DF00CE8150 /* SignInWithGoogleScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithGoogleScreen.swift; sourceTree = "<group>"; };
+		F3A499F029F4536B00CE8150 /* SignUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreen.swift; sourceTree = "<group>"; };
 		F3F71ECC29F27D490085A8E6 /* ITCWeek4SwiftUIFriday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ITCWeek4SwiftUIFriday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F71ECF29F27D490085A8E6 /* ITCWeek4SwiftUIFridayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITCWeek4SwiftUIFridayApp.swift; sourceTree = "<group>"; };
-		F3F71ED129F27D490085A8E6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F3F71ED129F27D490085A8E6 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		F3F71ED329F27D4B0085A8E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3F71ED629F27D4B0085A8E6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F3F71EDC29F27D4B0085A8E6 /* ITCWeek4SwiftUIFridayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ITCWeek4SwiftUIFridayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +87,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F3A499EF29F452FA00CE8150 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				F3F71ED129F27D490085A8E6 /* LoginScreen.swift */,
+				F3A499E929F4399600CE8150 /* ForgotPasswordSceen.swift */,
+				F3A499EB29F451E400CE8150 /* SignInWithFaceBookScreen.swift */,
+				F3A499ED29F452DF00CE8150 /* SignInWithGoogleScreen.swift */,
+				F3A499F029F4536B00CE8150 /* SignUpScreen.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
 		F3F71EC329F27D480085A8E6 = {
 			isa = PBXGroup;
 			children = (
@@ -151,8 +175,10 @@
 		F3F71EFF29F294870085A8E6 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F3F71ED129F27D490085A8E6 /* ContentView.swift */,
+				F3A499EF29F452FA00CE8150 /* Authentication */,
 				F3F71EF929F28C7E0085A8E6 /* HomeScreen.swift */,
+				F3A499E529F4173B00CE8150 /* SwiftUIExamples.swift */,
+				F3A499E729F418C900CE8150 /* RoundedRectExample.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -287,10 +313,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3A499E629F4173B00CE8150 /* SwiftUIExamples.swift in Sources */,
+				F3A499E829F418C900CE8150 /* RoundedRectExample.swift in Sources */,
 				F3F71EFC29F293C30085A8E6 /* LoginViewModel.swift in Sources */,
-				F3F71ED229F27D490085A8E6 /* ContentView.swift in Sources */,
+				F3A499EE29F452DF00CE8150 /* SignInWithGoogleScreen.swift in Sources */,
+				F3F71ED229F27D490085A8E6 /* LoginScreen.swift in Sources */,
+				F3A499F129F4536B00CE8150 /* SignUpScreen.swift in Sources */,
+				F3A499EA29F4399600CE8150 /* ForgotPasswordSceen.swift in Sources */,
 				F3F71ED029F27D490085A8E6 /* ITCWeek4SwiftUIFridayApp.swift in Sources */,
 				F3F71EFA29F28C7E0085A8E6 /* HomeScreen.swift in Sources */,
+				F3A499EC29F451E400CE8150 /* SignInWithFaceBookScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
