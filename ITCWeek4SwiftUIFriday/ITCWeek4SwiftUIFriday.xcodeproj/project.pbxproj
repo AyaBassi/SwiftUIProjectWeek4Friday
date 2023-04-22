@@ -13,6 +13,9 @@
 		F3A499EC29F451E400CE8150 /* SignInWithFaceBookScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A499EB29F451E400CE8150 /* SignInWithFaceBookScreen.swift */; };
 		F3A499EE29F452DF00CE8150 /* SignInWithGoogleScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A499ED29F452DF00CE8150 /* SignInWithGoogleScreen.swift */; };
 		F3A499F129F4536B00CE8150 /* SignUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A499F029F4536B00CE8150 /* SignUpScreen.swift */; };
+		F3A499F329F4734700CE8150 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A499F229F4734700CE8150 /* SignUpViewModel.swift */; };
+		F3A499F529F4845700CE8150 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A499F429F4845700CE8150 /* ListCell.swift */; };
+		F3A499F729F4865E00CE8150 /* BookTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A499F629F4865E00CE8150 /* BookTitle.swift */; };
 		F3F71ED029F27D490085A8E6 /* ITCWeek4SwiftUIFridayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F71ECF29F27D490085A8E6 /* ITCWeek4SwiftUIFridayApp.swift */; };
 		F3F71ED229F27D490085A8E6 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F71ED129F27D490085A8E6 /* LoginScreen.swift */; };
 		F3F71ED429F27D4B0085A8E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3F71ED329F27D4B0085A8E6 /* Assets.xcassets */; };
@@ -20,7 +23,7 @@
 		F3F71EE129F27D4B0085A8E6 /* ITCWeek4SwiftUIFridayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F71EE029F27D4B0085A8E6 /* ITCWeek4SwiftUIFridayTests.swift */; };
 		F3F71EEB29F27D4B0085A8E6 /* ITCWeek4SwiftUIFridayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F71EEA29F27D4B0085A8E6 /* ITCWeek4SwiftUIFridayUITests.swift */; };
 		F3F71EED29F27D4B0085A8E6 /* ITCWeek4SwiftUIFridayUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F71EEC29F27D4B0085A8E6 /* ITCWeek4SwiftUIFridayUITestsLaunchTests.swift */; };
-		F3F71EFA29F28C7E0085A8E6 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F71EF929F28C7E0085A8E6 /* HomeScreen.swift */; };
+		F3F71EFA29F28C7E0085A8E6 /* SubjectHomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F71EF929F28C7E0085A8E6 /* SubjectHomeScreen.swift */; };
 		F3F71EFC29F293C30085A8E6 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F71EFB29F293C30085A8E6 /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +51,9 @@
 		F3A499EB29F451E400CE8150 /* SignInWithFaceBookScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithFaceBookScreen.swift; sourceTree = "<group>"; };
 		F3A499ED29F452DF00CE8150 /* SignInWithGoogleScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithGoogleScreen.swift; sourceTree = "<group>"; };
 		F3A499F029F4536B00CE8150 /* SignUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreen.swift; sourceTree = "<group>"; };
+		F3A499F229F4734700CE8150 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		F3A499F429F4845700CE8150 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
+		F3A499F629F4865E00CE8150 /* BookTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTitle.swift; sourceTree = "<group>"; };
 		F3F71ECC29F27D490085A8E6 /* ITCWeek4SwiftUIFriday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ITCWeek4SwiftUIFriday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F71ECF29F27D490085A8E6 /* ITCWeek4SwiftUIFridayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITCWeek4SwiftUIFridayApp.swift; sourceTree = "<group>"; };
 		F3F71ED129F27D490085A8E6 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
@@ -58,7 +64,7 @@
 		F3F71EE629F27D4B0085A8E6 /* ITCWeek4SwiftUIFridayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ITCWeek4SwiftUIFridayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F71EEA29F27D4B0085A8E6 /* ITCWeek4SwiftUIFridayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITCWeek4SwiftUIFridayUITests.swift; sourceTree = "<group>"; };
 		F3F71EEC29F27D4B0085A8E6 /* ITCWeek4SwiftUIFridayUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITCWeek4SwiftUIFridayUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		F3F71EF929F28C7E0085A8E6 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		F3F71EF929F28C7E0085A8E6 /* SubjectHomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectHomeScreen.swift; sourceTree = "<group>"; };
 		F3F71EFB29F293C30085A8E6 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -161,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				F3F71EFB29F293C30085A8E6 /* LoginViewModel.swift */,
+				F3A499F229F4734700CE8150 /* SignUpViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -176,9 +183,11 @@
 			isa = PBXGroup;
 			children = (
 				F3A499EF29F452FA00CE8150 /* Authentication */,
-				F3F71EF929F28C7E0085A8E6 /* HomeScreen.swift */,
+				F3F71EF929F28C7E0085A8E6 /* SubjectHomeScreen.swift */,
+				F3A499F629F4865E00CE8150 /* BookTitle.swift */,
 				F3A499E529F4173B00CE8150 /* SwiftUIExamples.swift */,
 				F3A499E729F418C900CE8150 /* RoundedRectExample.swift */,
+				F3A499F429F4845700CE8150 /* ListCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -315,13 +324,16 @@
 			files = (
 				F3A499E629F4173B00CE8150 /* SwiftUIExamples.swift in Sources */,
 				F3A499E829F418C900CE8150 /* RoundedRectExample.swift in Sources */,
+				F3A499F729F4865E00CE8150 /* BookTitle.swift in Sources */,
 				F3F71EFC29F293C30085A8E6 /* LoginViewModel.swift in Sources */,
 				F3A499EE29F452DF00CE8150 /* SignInWithGoogleScreen.swift in Sources */,
 				F3F71ED229F27D490085A8E6 /* LoginScreen.swift in Sources */,
 				F3A499F129F4536B00CE8150 /* SignUpScreen.swift in Sources */,
 				F3A499EA29F4399600CE8150 /* ForgotPasswordSceen.swift in Sources */,
 				F3F71ED029F27D490085A8E6 /* ITCWeek4SwiftUIFridayApp.swift in Sources */,
-				F3F71EFA29F28C7E0085A8E6 /* HomeScreen.swift in Sources */,
+				F3F71EFA29F28C7E0085A8E6 /* SubjectHomeScreen.swift in Sources */,
+				F3A499F529F4845700CE8150 /* ListCell.swift in Sources */,
+				F3A499F329F4734700CE8150 /* SignUpViewModel.swift in Sources */,
 				F3A499EC29F451E400CE8150 /* SignInWithFaceBookScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
