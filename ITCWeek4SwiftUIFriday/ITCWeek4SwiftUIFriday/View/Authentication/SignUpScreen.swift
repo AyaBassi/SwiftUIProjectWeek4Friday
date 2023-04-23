@@ -18,7 +18,6 @@ struct SignUpScreen: View {
     @State var isChecked : Bool = false
    
     var body: some View {
-        
             VStack (alignment:.leading,spacing: 20){
                 
                 // MARK: - Email TextField
@@ -66,8 +65,8 @@ struct SignUpScreen: View {
                     
                     // MARK: - terms of service Button
                     
-                    Button {
-                        print("Go to terms of service")
+                    NavigationLink {
+                        TermsAndConditionInSwiftUIWebView()
                     } label: {
                         Text("terms of service")
                             .foregroundColor(.orange)

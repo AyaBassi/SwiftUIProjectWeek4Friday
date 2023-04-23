@@ -8,11 +8,26 @@
 import SwiftUI
 
 struct BookSections: View {
+    let items = ["Section A","Section B","Section C","Section D","Section F","Section G","Section J","Section M"]
     
+    
+    let arr = Array(repeating: GridItem(.flexible()), count: 2)
     var body: some View {
-        
-        Text("BookSections")
-        
+        VStack{
+            ScrollView{
+                LazyVGrid(columns: arr,spacing: 8) {
+                    ForEach(items,id:\.self){ item in
+                        NavigationLink {
+                            QuestionAndAnswersScreen()
+                        } label: {
+                            GridCell(cellData: item)
+                        }
+                    }
+                }
+
+            }
+        }.padding([.leading,.trailing],10)
+            .navigationTitle("Sections")
     }
 }
 

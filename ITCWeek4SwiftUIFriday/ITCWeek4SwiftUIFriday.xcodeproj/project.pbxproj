@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		F345343A29F55CAE001A19D7 /* FakeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F345343929F55CAE001A19D7 /* FakeData.swift */; };
 		F345343C29F569E5001A19D7 /* BookSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = F345343B29F569E5001A19D7 /* BookSections.swift */; };
+		F345343E29F58A88001A19D7 /* GridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F345343D29F58A88001A19D7 /* GridCell.swift */; };
+		F345344229F59682001A19D7 /* BookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F345344129F59682001A19D7 /* BookModel.swift */; };
+		F345344429F5A087001A19D7 /* QuestionAndAnswersScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F345344329F5A087001A19D7 /* QuestionAndAnswersScreen.swift */; };
+		F345344629F5A426001A19D7 /* TermsAndConditionInSwiftUIWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F345344529F5A426001A19D7 /* TermsAndConditionInSwiftUIWebView.swift */; };
 		F3A499E629F4173B00CE8150 /* SwiftUIExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A499E529F4173B00CE8150 /* SwiftUIExamples.swift */; };
 		F3A499E829F418C900CE8150 /* RoundedRectExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A499E729F418C900CE8150 /* RoundedRectExample.swift */; };
 		F3A499EA29F4399600CE8150 /* ForgotPasswordSceen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A499E929F4399600CE8150 /* ForgotPasswordSceen.swift */; };
@@ -49,6 +53,10 @@
 /* Begin PBXFileReference section */
 		F345343929F55CAE001A19D7 /* FakeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeData.swift; sourceTree = "<group>"; };
 		F345343B29F569E5001A19D7 /* BookSections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSections.swift; sourceTree = "<group>"; };
+		F345343D29F58A88001A19D7 /* GridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCell.swift; sourceTree = "<group>"; };
+		F345344129F59682001A19D7 /* BookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookModel.swift; sourceTree = "<group>"; };
+		F345344329F5A087001A19D7 /* QuestionAndAnswersScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionAndAnswersScreen.swift; sourceTree = "<group>"; };
+		F345344529F5A426001A19D7 /* TermsAndConditionInSwiftUIWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionInSwiftUIWebView.swift; sourceTree = "<group>"; };
 		F3A499E529F4173B00CE8150 /* SwiftUIExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIExamples.swift; sourceTree = "<group>"; };
 		F3A499E729F418C900CE8150 /* RoundedRectExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectExample.swift; sourceTree = "<group>"; };
 		F3A499E929F4399600CE8150 /* ForgotPasswordSceen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordSceen.swift; sourceTree = "<group>"; };
@@ -180,6 +188,7 @@
 		F3F71EFE29F2947A0085A8E6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F345344129F59682001A19D7 /* BookModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -194,6 +203,9 @@
 				F3A499E729F418C900CE8150 /* RoundedRectExample.swift */,
 				F3A499F429F4845700CE8150 /* ListCell.swift */,
 				F345343B29F569E5001A19D7 /* BookSections.swift */,
+				F345343D29F58A88001A19D7 /* GridCell.swift */,
+				F345344329F5A087001A19D7 /* QuestionAndAnswersScreen.swift */,
+				F345344529F5A426001A19D7 /* TermsAndConditionInSwiftUIWebView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -328,6 +340,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F345344629F5A426001A19D7 /* TermsAndConditionInSwiftUIWebView.swift in Sources */,
 				F3A499E629F4173B00CE8150 /* SwiftUIExamples.swift in Sources */,
 				F3A499E829F418C900CE8150 /* RoundedRectExample.swift in Sources */,
 				F345343C29F569E5001A19D7 /* BookSections.swift in Sources */,
@@ -337,12 +350,15 @@
 				F3F71ED229F27D490085A8E6 /* LoginScreen.swift in Sources */,
 				F345343A29F55CAE001A19D7 /* FakeData.swift in Sources */,
 				F3A499F129F4536B00CE8150 /* SignUpScreen.swift in Sources */,
+				F345344429F5A087001A19D7 /* QuestionAndAnswersScreen.swift in Sources */,
 				F3A499EA29F4399600CE8150 /* ForgotPasswordSceen.swift in Sources */,
 				F3F71ED029F27D490085A8E6 /* ITCWeek4SwiftUIFridayApp.swift in Sources */,
+				F345344229F59682001A19D7 /* BookModel.swift in Sources */,
 				F3F71EFA29F28C7E0085A8E6 /* SubjectHomeScreen.swift in Sources */,
 				F3A499F529F4845700CE8150 /* ListCell.swift in Sources */,
 				F3A499F329F4734700CE8150 /* SignUpViewModel.swift in Sources */,
 				F3A499EC29F451E400CE8150 /* SignInWithFaceBookScreen.swift in Sources */,
+				F345343E29F58A88001A19D7 /* GridCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

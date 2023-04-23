@@ -14,7 +14,8 @@ struct BookTitle: View {
     
     var selectedSubject:String
     var nameOfSelectedImage:String
-    
+    let sectionss : [Level] = [Level(levelName: "GCSE"),Level(levelName: "ASLevel"),
+                               Level(levelName: "ALevel")]
     let sections: [String] = ["GCSE", "ASLevel"//, "ALevel"
     ]
     let gcseBooks : [String] = ["GCSE A Book","GCSE Book B","GCSE Book C"]
@@ -29,9 +30,9 @@ struct BookTitle: View {
         VStack {
             
             List{
-                ForEach(sections,id: \.self){ section in
-                    Section(section){
-                        if section == "GCSE"{
+                ForEach(sectionss){ sec in
+                    Section(header:Text(sec.levelName)){
+                        if sec.levelName == "GCSE"{
                             ForEach(gcseBooks, id: \.self) { bookName in
                                 NavigationLink {
                                     BookSections()
@@ -40,7 +41,7 @@ struct BookTitle: View {
                                 }
                             }
                         }
-                         else {
+                        else if sec.levelName == "ASLevel" {
                             ForEach(aSLevelBooks, id: \.self) { bookName in
                                 NavigationLink {
                                     BookSections()
@@ -49,15 +50,15 @@ struct BookTitle: View {
                                 }
                             }
                         }
-//                         if section == "ALevel"{
-//                            ForEach(a2LevelBooks, id: \.self) { myBook in
-//                                NavigationLink {
-//                                    BookSections()
-//                                } label: {
-//                                    Text(myBook)
-//                                }
-//                            }
-//                        }
+                         else{
+                            ForEach(a2LevelBooks, id: \.self) { myBook in
+                                NavigationLink {
+                                    BookSections()
+                                } label: {
+                                    ListCell(textLabel: myBook, withImage: "gcseProgrammingImage3")
+                                }
+                            }
+                        }
                     }
                 }
             }
