@@ -7,24 +7,67 @@
 
 import SwiftUI
 
+
+// Notes: For multiple if statements in sections the building in indexing takes for ever
+
 struct BookTitle: View {
-    var bookTitle:String
     
-    var bookNames :[String]
+    var selectedSubject:String
+    var nameOfSelectedImage:String
     
+    let sections: [String] = ["GCSE", "ASLevel"//, "ALevel"
+    ]
+    let gcseBooks : [String] = ["GCSE A Book","GCSE Book B","GCSE Book C"]
+    let aSLevelBooks : [String] = ["AS Book A","AS  Book B","AS Book C"]
+    let a2LevelBooks : [String] = ["A2 Book A","A2 Book B","A2 Book C"]
+    let gcseBookImageNames = ["gcseProgrammingImage","gcseProgrammingImage2","gcseProgrammingImage3"]
+    let aSBookImageNames = ["ASProgrammingImage","ASProgrammingImage2","ASProgrammingImage3"]
+    //let urls = [""]
+   
     var body: some View {
 
         VStack {
-            List(bookNames,id: \.self) { name in
-                ListCell(textLabel: name, imageName: "physicsImage")
+            
+            List{
+                ForEach(sections,id: \.self){ section in
+                    Section(section){
+                        if section == "GCSE"{
+                            ForEach(gcseBooks, id: \.self) { bookName in
+                                NavigationLink {
+                                    BookSections()
+                                } label: {
+                                    ListCell(textLabel: bookName, withImage: "gcseProgrammingImage")
+                                }
+                            }
+                        }
+                         else {
+                            ForEach(aSLevelBooks, id: \.self) { bookName in
+                                NavigationLink {
+                                    BookSections()
+                                } label: {
+                                    ListCell(textLabel: bookName, withImage: "gcseProgrammingImage2")
+                                }
+                            }
+                        }
+//                         if section == "ALevel"{
+//                            ForEach(a2LevelBooks, id: \.self) { myBook in
+//                                NavigationLink {
+//                                    BookSections()
+//                                } label: {
+//                                    Text(myBook)
+//                                }
+//                            }
+//                        }
+                    }
+                }
             }
-            .navigationTitle(bookTitle)
+            .navigationTitle(selectedSubject)
         }
     }
 }
 
 struct BookTitle_Previews: PreviewProvider {
     static var previews: some View {
-        BookTitle(bookTitle: "", bookNames: [])
+        BookTitle(selectedSubject: "", nameOfSelectedImage: "")
     }
 }

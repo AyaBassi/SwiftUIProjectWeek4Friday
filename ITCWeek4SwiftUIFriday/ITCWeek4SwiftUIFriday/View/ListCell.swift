@@ -9,12 +9,11 @@ import SwiftUI
 
 struct ListCell: View {
     let textLabel : String
-    
-    let imageName : String
+    let withImage : String
     
     var body: some View {
         HStack {
-            Image(imageName)
+            Image(withImage)
                 .resizable()
                 .frame(maxWidth: 70,maxHeight: 70)
                 .cornerRadius(10)
@@ -28,6 +27,6 @@ struct ListCell: View {
 
 struct ListCell_Previews: PreviewProvider {
     static var previews: some View {
-        ListCell(textLabel: "Mathematics", imageName: "chemistryImage")
+        ListCell(textLabel: "Mathematics", withImage: "chemistryImage")
     }
 }

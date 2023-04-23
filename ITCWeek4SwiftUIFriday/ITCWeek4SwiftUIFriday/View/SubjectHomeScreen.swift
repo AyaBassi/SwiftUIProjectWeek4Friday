@@ -13,21 +13,30 @@ import SwiftUI
 
 struct SubjectHomeScreen: View {
     var email:String
-    let subjects = ["Programming", "Mathematics","Computer Science","Biology","Chemistry","Physics" , "Economics"]
-    let imageNames = ["programmingImage", "mathematicsImage","computerScienceImage","biologyImage","chemistryImage","physicsImage" , "economicsImage"]
+    let subjects = ["Programming", "Mathematics","Computer Science",
+                    "Biology","Chemistry","Physics" , "Economics"]
+    let imageNames = ["programmingImage","mathematicsImage","computerScienceImage",
+                      "biologyImage","chemistryImage","physicsImage" , "economicsImage"]
     
-    let bookNames = ["Book title A", "Book title b","Book title C","Book title D"]
+    let programmingBookNames = ["Programming Book title A", "ProgramminBook title b","ProgrammingBook title C","ProgrammingBook title D"]
+    let mathematicsBookNames = ["Mathematics Book title A", "Mathematics Book title b","MathematicsBook title C","MathematicsBook title D"]
+  
+    
+ 
+    let physicsBookNames = ["Book title A", "Book title b","Book title C","Book title D"]
+  
+  var bookNamesToSend : [String] = [String]()
+    
     var body: some View {
+        
         VStack {
-            
-            List(Array(zip(subjects,imageNames)),id: \.self.0) {(subject,imageName) in
-                NavigationLink {
-                    BookTitle(bookTitle: "Some title", bookNames: bookNames)
-                } label: {
-                    ListCell(textLabel: subject,imageName: imageName)
-                }
-
+            List(Array(zip(subjects,imageNames)),id: \.self.0) {(subjectName,imageName) in
                 
+                NavigationLink {
+                    BookTitle(selectedSubject: subjectName, nameOfSelectedImage: imageName)
+                } label: {
+                    ListCell(textLabel: subjectName,withImage: imageName)
+                }
             }
         }
         .navigationTitle(Text(email))
