@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F32B457A29F67AA400AA370F /* CreateQuestionAndAnswerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32B457929F67AA400AA370F /* CreateQuestionAndAnswerScreen.swift */; };
 		F345343A29F55CAE001A19D7 /* FakeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F345343929F55CAE001A19D7 /* FakeData.swift */; };
 		F345343C29F569E5001A19D7 /* BookSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = F345343B29F569E5001A19D7 /* BookSections.swift */; };
 		F345343E29F58A88001A19D7 /* GridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F345343D29F58A88001A19D7 /* GridCell.swift */; };
@@ -51,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F32B457929F67AA400AA370F /* CreateQuestionAndAnswerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQuestionAndAnswerScreen.swift; sourceTree = "<group>"; };
 		F345343929F55CAE001A19D7 /* FakeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeData.swift; sourceTree = "<group>"; };
 		F345343B29F569E5001A19D7 /* BookSections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSections.swift; sourceTree = "<group>"; };
 		F345343D29F58A88001A19D7 /* GridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCell.swift; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 				F345343D29F58A88001A19D7 /* GridCell.swift */,
 				F345344329F5A087001A19D7 /* QuestionAndAnswersScreen.swift */,
 				F345344529F5A426001A19D7 /* TermsAndConditionInSwiftUIWebView.swift */,
+				F32B457929F67AA400AA370F /* CreateQuestionAndAnswerScreen.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 				F3F71EFA29F28C7E0085A8E6 /* SubjectHomeScreen.swift in Sources */,
 				F3A499F529F4845700CE8150 /* ListCell.swift in Sources */,
 				F3A499F329F4734700CE8150 /* SignUpViewModel.swift in Sources */,
+				F32B457A29F67AA400AA370F /* CreateQuestionAndAnswerScreen.swift in Sources */,
 				F3A499EC29F451E400CE8150 /* SignInWithFaceBookScreen.swift in Sources */,
 				F345343E29F58A88001A19D7 /* GridCell.swift in Sources */,
 			);
