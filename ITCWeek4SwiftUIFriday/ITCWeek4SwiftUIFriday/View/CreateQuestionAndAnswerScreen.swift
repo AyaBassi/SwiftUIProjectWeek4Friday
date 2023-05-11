@@ -33,6 +33,18 @@ struct CreateQuestionAndAnswerScreen: View {
                     TextField("Write you answer here ...", text: $myAnswer).textFieldStyle(.roundedBorder)
                 }.padding()
                 
+                Button {
+                    isShown.toggle()
+                } label: {
+                    Text("Done").frame(maxWidth: .infinity,maxHeight: 40)
+                        .buttonStyle(.borderedProminent)
+                        .background(.teal)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                        .padding()
+                }
+
+                
                 Spacer()
             }
     }

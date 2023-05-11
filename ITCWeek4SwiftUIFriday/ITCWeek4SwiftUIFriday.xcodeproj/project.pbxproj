@@ -14,6 +14,9 @@
 		F345344229F59682001A19D7 /* BookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F345344129F59682001A19D7 /* BookModel.swift */; };
 		F345344429F5A087001A19D7 /* QuestionAndAnswersScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F345344329F5A087001A19D7 /* QuestionAndAnswersScreen.swift */; };
 		F345344629F5A426001A19D7 /* TermsAndConditionInSwiftUIWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F345344529F5A426001A19D7 /* TermsAndConditionInSwiftUIWebView.swift */; };
+		F3990B632A0CE72C0049DFEF /* KeychainMangerSavingObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3990B622A0CE72C0049DFEF /* KeychainMangerSavingObject.swift */; };
+		F3990B652A0CF8A00049DFEF /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3990B642A0CF8A00049DFEF /* Credentials.swift */; };
+		F3990B672A0CF9900049DFEF /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3990B662A0CF9900049DFEF /* Authentication.swift */; };
 		F3A499E629F4173B00CE8150 /* SwiftUIExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A499E529F4173B00CE8150 /* SwiftUIExamples.swift */; };
 		F3A499E829F418C900CE8150 /* RoundedRectExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A499E729F418C900CE8150 /* RoundedRectExample.swift */; };
 		F3A499EA29F4399600CE8150 /* ForgotPasswordSceen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A499E929F4399600CE8150 /* ForgotPasswordSceen.swift */; };
@@ -23,6 +26,9 @@
 		F3A499F329F4734700CE8150 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A499F229F4734700CE8150 /* SignUpViewModel.swift */; };
 		F3A499F529F4845700CE8150 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A499F429F4845700CE8150 /* ListCell.swift */; };
 		F3A499F729F4865E00CE8150 /* BookTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A499F629F4865E00CE8150 /* BookTitle.swift */; };
+		F3AAA9F52A07F69B00ADACA2 /* QAndAScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AAA9F42A07F69B00ADACA2 /* QAndAScreenViewModel.swift */; };
+		F3AD67DB29FEB9CC00D3E030 /* KeychainProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AD67DA29FEB9CC00D3E030 /* KeychainProtocol.swift */; };
+		F3AD67DD29FEBBDB00D3E030 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AD67DC29FEBBDB00D3E030 /* KeychainManager.swift */; };
 		F3F71ED029F27D490085A8E6 /* ITCWeek4SwiftUIFridayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F71ECF29F27D490085A8E6 /* ITCWeek4SwiftUIFridayApp.swift */; };
 		F3F71ED229F27D490085A8E6 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F71ED129F27D490085A8E6 /* LoginScreen.swift */; };
 		F3F71ED429F27D4B0085A8E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3F71ED329F27D4B0085A8E6 /* Assets.xcassets */; };
@@ -59,6 +65,9 @@
 		F345344129F59682001A19D7 /* BookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookModel.swift; sourceTree = "<group>"; };
 		F345344329F5A087001A19D7 /* QuestionAndAnswersScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionAndAnswersScreen.swift; sourceTree = "<group>"; };
 		F345344529F5A426001A19D7 /* TermsAndConditionInSwiftUIWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionInSwiftUIWebView.swift; sourceTree = "<group>"; };
+		F3990B622A0CE72C0049DFEF /* KeychainMangerSavingObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainMangerSavingObject.swift; sourceTree = "<group>"; };
+		F3990B642A0CF8A00049DFEF /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		F3990B662A0CF9900049DFEF /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
 		F3A499E529F4173B00CE8150 /* SwiftUIExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIExamples.swift; sourceTree = "<group>"; };
 		F3A499E729F418C900CE8150 /* RoundedRectExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectExample.swift; sourceTree = "<group>"; };
 		F3A499E929F4399600CE8150 /* ForgotPasswordSceen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordSceen.swift; sourceTree = "<group>"; };
@@ -68,6 +77,9 @@
 		F3A499F229F4734700CE8150 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		F3A499F429F4845700CE8150 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 		F3A499F629F4865E00CE8150 /* BookTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTitle.swift; sourceTree = "<group>"; };
+		F3AAA9F42A07F69B00ADACA2 /* QAndAScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QAndAScreenViewModel.swift; sourceTree = "<group>"; };
+		F3AD67DA29FEB9CC00D3E030 /* KeychainProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainProtocol.swift; sourceTree = "<group>"; };
+		F3AD67DC29FEBBDB00D3E030 /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
 		F3F71ECC29F27D490085A8E6 /* ITCWeek4SwiftUIFriday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ITCWeek4SwiftUIFriday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F71ECF29F27D490085A8E6 /* ITCWeek4SwiftUIFridayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITCWeek4SwiftUIFridayApp.swift; sourceTree = "<group>"; };
 		F3F71ED129F27D490085A8E6 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
@@ -110,6 +122,7 @@
 		F3A499EF29F452FA00CE8150 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				F345344529F5A426001A19D7 /* TermsAndConditionInSwiftUIWebView.swift */,
 				F3F71ED129F27D490085A8E6 /* LoginScreen.swift */,
 				F3A499E929F4399600CE8150 /* ForgotPasswordSceen.swift */,
 				F3A499EB29F451E400CE8150 /* SignInWithFaceBookScreen.swift */,
@@ -117,6 +130,24 @@
 				F3A499F029F4536B00CE8150 /* SignUpScreen.swift */,
 			);
 			path = Authentication;
+			sourceTree = "<group>";
+		};
+		F3AD67D829FEB98D00D3E030 /* ServiceManagers */ = {
+			isa = PBXGroup;
+			children = (
+				F3AD67D929FEB9B600D3E030 /* KeyChain */,
+			);
+			path = ServiceManagers;
+			sourceTree = "<group>";
+		};
+		F3AD67D929FEB9B600D3E030 /* KeyChain */ = {
+			isa = PBXGroup;
+			children = (
+				F3AD67DA29FEB9CC00D3E030 /* KeychainProtocol.swift */,
+				F3AD67DC29FEBBDB00D3E030 /* KeychainManager.swift */,
+				F3990B622A0CE72C0049DFEF /* KeychainMangerSavingObject.swift */,
+			);
+			path = KeyChain;
 			sourceTree = "<group>";
 		};
 		F3F71EC329F27D480085A8E6 = {
@@ -142,6 +173,7 @@
 		F3F71ECE29F27D490085A8E6 /* ITCWeek4SwiftUIFriday */ = {
 			isa = PBXGroup;
 			children = (
+				F3AD67D829FEB98D00D3E030 /* ServiceManagers */,
 				F3F71EFE29F2947A0085A8E6 /* Model */,
 				F3F71EFF29F294870085A8E6 /* View */,
 				F3F71EFD29F294660085A8E6 /* ViewModel */,
@@ -183,6 +215,7 @@
 			children = (
 				F3F71EFB29F293C30085A8E6 /* LoginViewModel.swift */,
 				F3A499F229F4734700CE8150 /* SignUpViewModel.swift */,
+				F3AAA9F42A07F69B00ADACA2 /* QAndAScreenViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -191,6 +224,8 @@
 			isa = PBXGroup;
 			children = (
 				F345344129F59682001A19D7 /* BookModel.swift */,
+				F3990B642A0CF8A00049DFEF /* Credentials.swift */,
+				F3990B662A0CF9900049DFEF /* Authentication.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -207,7 +242,6 @@
 				F345343B29F569E5001A19D7 /* BookSections.swift */,
 				F345343D29F58A88001A19D7 /* GridCell.swift */,
 				F345344329F5A087001A19D7 /* QuestionAndAnswersScreen.swift */,
-				F345344529F5A426001A19D7 /* TermsAndConditionInSwiftUIWebView.swift */,
 				F32B457929F67AA400AA370F /* CreateQuestionAndAnswerScreen.swift */,
 			);
 			path = View;
@@ -345,20 +379,26 @@
 			files = (
 				F345344629F5A426001A19D7 /* TermsAndConditionInSwiftUIWebView.swift in Sources */,
 				F3A499E629F4173B00CE8150 /* SwiftUIExamples.swift in Sources */,
+				F3990B652A0CF8A00049DFEF /* Credentials.swift in Sources */,
 				F3A499E829F418C900CE8150 /* RoundedRectExample.swift in Sources */,
 				F345343C29F569E5001A19D7 /* BookSections.swift in Sources */,
 				F3A499F729F4865E00CE8150 /* BookTitle.swift in Sources */,
 				F3F71EFC29F293C30085A8E6 /* LoginViewModel.swift in Sources */,
 				F3A499EE29F452DF00CE8150 /* SignInWithGoogleScreen.swift in Sources */,
 				F3F71ED229F27D490085A8E6 /* LoginScreen.swift in Sources */,
+				F3990B632A0CE72C0049DFEF /* KeychainMangerSavingObject.swift in Sources */,
 				F345343A29F55CAE001A19D7 /* FakeData.swift in Sources */,
 				F3A499F129F4536B00CE8150 /* SignUpScreen.swift in Sources */,
 				F345344429F5A087001A19D7 /* QuestionAndAnswersScreen.swift in Sources */,
 				F3A499EA29F4399600CE8150 /* ForgotPasswordSceen.swift in Sources */,
 				F3F71ED029F27D490085A8E6 /* ITCWeek4SwiftUIFridayApp.swift in Sources */,
 				F345344229F59682001A19D7 /* BookModel.swift in Sources */,
+				F3AAA9F52A07F69B00ADACA2 /* QAndAScreenViewModel.swift in Sources */,
+				F3990B672A0CF9900049DFEF /* Authentication.swift in Sources */,
 				F3F71EFA29F28C7E0085A8E6 /* SubjectHomeScreen.swift in Sources */,
 				F3A499F529F4845700CE8150 /* ListCell.swift in Sources */,
+				F3AD67DB29FEB9CC00D3E030 /* KeychainProtocol.swift in Sources */,
+				F3AD67DD29FEBBDB00D3E030 /* KeychainManager.swift in Sources */,
 				F3A499F329F4734700CE8150 /* SignUpViewModel.swift in Sources */,
 				F32B457A29F67AA400AA370F /* CreateQuestionAndAnswerScreen.swift in Sources */,
 				F3A499EC29F451E400CE8150 /* SignInWithFaceBookScreen.swift in Sources */,
@@ -523,6 +563,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ITCWeek4SwiftUIFriday/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Allow Facial Id Login";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -551,6 +592,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ITCWeek4SwiftUIFriday/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Allow Facial Id Login";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

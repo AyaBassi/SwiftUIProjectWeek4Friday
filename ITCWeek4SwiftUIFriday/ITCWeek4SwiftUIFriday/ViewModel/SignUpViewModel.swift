@@ -7,6 +7,8 @@
 
 import Foundation
 class SignUpViewModel {
+    
+    
     func isValidSigningIn(email:String?,password:String?,repeatPassword:String?)->Bool{
         var isValid = false
         
@@ -31,4 +33,13 @@ class SignUpViewModel {
         
         return isValid
     }
+    
+    func saveToKeychain(password:String, withEmailAsKey email:String, aKeyChainManager: KeychainProtocol){
+        do{
+            try aKeyChainManager.saveStringValueIntoKeyChain(value: password, forkey: email)
+        }catch let error {
+            print("error:\(error.localizedDescription)")
+        }
+    }
+    
 }

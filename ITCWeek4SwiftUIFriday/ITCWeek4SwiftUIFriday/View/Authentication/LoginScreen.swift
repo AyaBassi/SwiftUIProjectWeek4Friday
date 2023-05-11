@@ -4,6 +4,8 @@
 //
 //  Created by Payam Karbassi on 21/04/2023.
 //
+// A@gmail.com
+// 123456
 
 import SwiftUI
 ///Notes
@@ -16,6 +18,7 @@ enum Root {
 
 struct LoginScreen: View {
     let title = "Log In"
+    
     @State var email : String = ""
     @State var password : String = ""
     @State var path = [Root]()
@@ -30,10 +33,10 @@ struct LoginScreen: View {
                         TextField("Email", text: $email)
                             .textFieldStyle(.plain)
                             .padding(2)
+                            .padding(.top,100)
                         Divider().padding(.bottom,16)
                     }.padding([.leading,.trailing],20)
-                    
-                    
+                        
                     Group{
                         SecureField("Password", text: $password)
                             .textFieldStyle(.plain)
@@ -41,19 +44,45 @@ struct LoginScreen: View {
                     }.padding([.leading,.trailing],20)
                     
                     // MARK: - Log In Button
-                    Button (action: {
-                        if !loginViewModel.isValidLoggingIn(email: email, password: password){
-                            path.append(.subjectHomeScreen)
-                        }else {
-                            print("Failed to validate login")
+                    if loginViewModel.returningAvailableBiometricType() != .none {
+                        // show facial id button
+                        Button {
+                            print("loging")
+                            
+                            loginViewModel.authenticateWithBiometric { result in
+                                switch result {
+                                case .success(_):
+                                    // success so log user in
+                                    path.append(.subjectHomeScreen)
+                                case .failure(_):
+                                    print("failed to ")
+                                }
+                            }
+                            
+                        } label: {
+                            loginViewModel.returningAvailableBiometricType() == .face ?
+                            Image(systemName: "faceid")
+                                .resizable().frame(maxWidth: 50,maxHeight: 50)
+                            : Image(systemName: "hand.thumbsup.circle")
+                                .resizable().frame(maxWidth: 50,maxHeight: 50)
                         }
-                    }, label: {
-                        Text("Log In").fontWeight(.heavy)
-                            .font(.title3)
-                            .frame(maxWidth: .infinity ,maxHeight: 40)
-                    }).padding()
-                        .buttonStyle(.borderedProminent)
-                        .tint(.orange)
+                    }else {
+                        
+                        // show normal login button
+                        Button (action: {
+                            if loginViewModel.isValidLoggingIn(email: email, password: password) && loginViewModel.isCorrectEmailAndPassword(email: email , password: password, aKeychainManager: KeychainManager()){
+                                path.append(.subjectHomeScreen)
+                            }else {
+                                print("Failed to validate login")
+                            }
+                        }, label: {
+                            Text("Log In").fontWeight(.heavy)
+                                .font(.title3)
+                                .frame(maxWidth: .infinity ,maxHeight: 40)
+                        }).padding()
+                            .buttonStyle(.borderedProminent)
+                            .tint(.orange)
+                    }
                     
                     // MARK: - Forgot the password? Navigation Link
                     
@@ -121,7 +150,7 @@ struct LoginScreen: View {
             //}
             
             .padding()
-            .padding(.top,100)
+            
             .navigationDestination(for: Root.self) { navigate in
                 switch navigate {
                 case .subjectHomeScreen: SubjectHomeScreen(email: email)
@@ -129,9 +158,7 @@ struct LoginScreen: View {
                 case .signInWithGoogle: SignInWithGoogleScreen()
                 }
             }
-            //.navigationBarTitle("Login")
             .navigationTitle(Text("Login"))
-            
             //.navigationBarTitleDisplayMode(.inline)
             //.navigationBarTitleDisplayMode(.automatic)
             //.navigationBarTitleDisplayMode(.large)

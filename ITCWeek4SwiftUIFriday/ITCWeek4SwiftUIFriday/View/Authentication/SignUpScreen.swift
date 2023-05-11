@@ -11,7 +11,7 @@ enum Root2 {
 }
 struct SignUpScreen: View {
     let signUpViewModel = SignUpViewModel()
-    
+    //let keychainManager = 
     @State var email: String = ""
     @State var password: String = ""
     @State var repeatPassword: String = ""
@@ -83,6 +83,11 @@ struct SignUpScreen: View {
                         
                         if signUpViewModel.isValidSigningIn(email: email, password: password, repeatPassword: repeatPassword){
                             print("Handle Sign Up!")
+                            // saving password and email into keychain
+                            signUpViewModel.saveToKeychain(password: password, withEmailAsKey: email, aKeyChainManager: KeychainManager())
+                            
+                            
+                            
                         } else {
                             print("Wrong format of email or password")
                         }
@@ -98,8 +103,6 @@ struct SignUpScreen: View {
                 })
                 .buttonStyle(.borderedProminent)
                 .tint(.orange)
-                
-                // MARK: -
                 
                 Spacer()
                 
